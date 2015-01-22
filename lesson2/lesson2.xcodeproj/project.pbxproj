@@ -81,8 +81,7 @@
 		DCE393A81A7148B8005D116C /* lesson2 */ = {
 			isa = PBXGroup;
 			children = (
-				DCE393AD1A7148B8005D116C /* AppDelegate.h */,
-				DCE393AE1A7148B8005D116C /* AppDelegate.m */,
+				DCE394011A714AD3005D116C /* Model */,
 				DCE393B01A7148B8005D116C /* ViewController.h */,
 				DCE393B11A7148B8005D116C /* ViewController.m */,
 				DCE393B31A7148B8005D116C /* Main.storyboard */,
@@ -96,6 +95,8 @@
 		DCE393A91A7148B8005D116C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DCE393AD1A7148B8005D116C /* AppDelegate.h */,
+				DCE393AE1A7148B8005D116C /* AppDelegate.m */,
 				DCE393AA1A7148B8005D116C /* Info.plist */,
 				DCE393AB1A7148B8005D116C /* main.m */,
 			);
@@ -117,6 +118,13 @@
 				DCE393C41A7148B8005D116C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCE394011A714AD3005D116C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,6 +420,7 @@
 				DCE393CB1A7148B8005D116C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCE393CC1A7148B8005D116C /* Build configuration list for PBXNativeTarget "lesson2Tests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +429,7 @@
 				DCE393CE1A7148B8005D116C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
