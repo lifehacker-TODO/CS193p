@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC24970C1A7155BC00BE2808 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = DC24970B1A7155BC00BE2808 /* Card.m */; };
+		DC24970F1A71599B00BE2808 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = DC24970E1A71599B00BE2808 /* Deck.m */; };
+		DC2497121A715F6D00BE2808 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2497111A715F6D00BE2808 /* PlayingCard.m */; };
+		DC2497151A716C1800BE2808 /* PlayCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2497141A716C1800BE2808 /* PlayCardDeck.m */; };
 		DCE393AC1A7148B8005D116C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE393AB1A7148B8005D116C /* main.m */; };
 		DCE393AF1A7148B8005D116C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE393AE1A7148B8005D116C /* AppDelegate.m */; };
 		DCE393B21A7148B8005D116C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE393B11A7148B8005D116C /* ViewController.m */; };
@@ -27,6 +31,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC24970A1A7155BC00BE2808 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		DC24970B1A7155BC00BE2808 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		DC24970D1A71599B00BE2808 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		DC24970E1A71599B00BE2808 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		DC2497101A715F6D00BE2808 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		DC2497111A715F6D00BE2808 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		DC2497131A716C1800BE2808 /* PlayCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayCardDeck.h; sourceTree = "<group>"; };
+		DC2497141A716C1800BE2808 /* PlayCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayCardDeck.m; sourceTree = "<group>"; };
 		DCE393A61A7148B8005D116C /* lesson2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lesson2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE393AA1A7148B8005D116C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCE393AB1A7148B8005D116C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -123,6 +135,14 @@
 		DCE394011A714AD3005D116C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DC24970A1A7155BC00BE2808 /* Card.h */,
+				DC24970B1A7155BC00BE2808 /* Card.m */,
+				DC24970D1A71599B00BE2808 /* Deck.h */,
+				DC24970E1A71599B00BE2808 /* Deck.m */,
+				DC2497101A715F6D00BE2808 /* PlayingCard.h */,
+				DC2497111A715F6D00BE2808 /* PlayingCard.m */,
+				DC2497131A716C1800BE2808 /* PlayCardDeck.h */,
+				DC2497141A716C1800BE2808 /* PlayCardDeck.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -227,9 +247,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC2497121A715F6D00BE2808 /* PlayingCard.m in Sources */,
+				DC24970F1A71599B00BE2808 /* Deck.m in Sources */,
 				DCE393B21A7148B8005D116C /* ViewController.m in Sources */,
+				DC2497151A716C1800BE2808 /* PlayCardDeck.m in Sources */,
 				DCE393AF1A7148B8005D116C /* AppDelegate.m in Sources */,
 				DCE393AC1A7148B8005D116C /* main.m in Sources */,
+				DC24970C1A7155BC00BE2808 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
