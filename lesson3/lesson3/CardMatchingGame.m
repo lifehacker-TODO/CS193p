@@ -68,7 +68,6 @@ static const int MISMATCH_PENALTY = 2;
                         othercard.matched = YES;
                         card.matched = YES;
                         
-                        NSLog(@"matched");
                         
                     } else {
                         self.score -= MISMATCH_PENALTY;

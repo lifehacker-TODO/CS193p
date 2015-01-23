@@ -17,6 +17,7 @@
 //@property (strong,nonatomic) Deck *deck;
 @property (strong,nonatomic) CardMatchingGame *game;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
+@property (weak, nonatomic) IBOutlet UITextField *scoreLabel;
 
 @end
 
@@ -56,6 +57,7 @@
                               forState:UIControlStateNormal];
         cardButton.enabled = !card.matched;
     }
+    self.scoreLabel.text = [NSString stringWithFormat:@"Score %d", self.game.score];
 }
 
 - (NSString *)titleForCard:(Card *)card{
