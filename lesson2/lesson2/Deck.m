@@ -39,9 +39,10 @@
 //随机抽取一张牌
 - (Card *)drawRandomCard
 {
-    Card * randomCard = nil;
+    Card *randomCard = nil;
     if ([self.cards count]) {
         int index = arc4random() % [self.cards count];
+        randomCard  = self.cards[index];
         [self.cards removeObjectAtIndex:index];
     }
     return randomCard;

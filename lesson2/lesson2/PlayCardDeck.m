@@ -19,6 +19,7 @@
                 PlayingCard *card =[[PlayingCard alloc] init];
                 card.suit = suit;
                 card.rank = rank;
+                card.content = [NSString stringWithFormat:@"%lu %@",rank,suit];
                 [self addCard:card];
             }
         }

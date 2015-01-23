@@ -7,13 +7,28 @@
 //
 
 #import "ViewController.h"
+#import "Deck.h"
+#import "PlayCardDeck.h"
+//#import "PlayingCard.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *flipsLabel;
 @property (nonatomic)int flipCount;
+@property (strong,nonatomic) Deck *deck;
 @end
 
 @implementation ViewController
+
+- (Deck *)deck{
+    if (!_deck) {
+        _deck = [self createDeck];
+    }
+    return _deck;
+}
+
+- (Deck *)createDeck{
+    return [[PlayCardDeck alloc] init];
+}
 
 - (void)setFlipCount:(int)flipCount{
     _flipCount = flipCount;
@@ -24,11 +39,16 @@
     if ([sender.currentTitle length]) {
         [sender setBackgroundImage:[UIImage imageNamed:@"cardback"] forState:UIControlStateNormal];
         [sender setTitle:@"" forState:UIControlStateNormal];
+        self.flipCount++;
     } else {
-        [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"] forState:UIControlStateNormal];
-        [sender setTitle:@"A♣︎" forState:UIControlStateNormal];
+         Card *card = [self.deck drawRandomCard];
+        if (card) {
+            [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"] forState:UIControlStateNormal];
+        [sender setTitle:/*@"A♣︎"*/card.content forState:UIControlStateNormal];
+        }
+        self.flipCount++;
     }
-    self.flipCount++;
+    
 }
 
 
