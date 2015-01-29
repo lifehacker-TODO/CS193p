@@ -4,20 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>lesson4.xcscheme</key>
+		<key>lesson3.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>DCB17C441A7494150053ADA8</key>
+		<key>DCE393D71A7148D0005D116C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DCB17C5D1A7494150053ADA8</key>
+		<key>DCE393F01A7148D0005D116C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
