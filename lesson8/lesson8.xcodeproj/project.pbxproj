@@ -14,6 +14,7 @@
 		DC2E8DE41A7F1384005228CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC2E8DE31A7F1384005228CD /* Images.xcassets */; };
 		DC2E8DE71A7F1384005228CD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC2E8DE51A7F1384005228CD /* LaunchScreen.xib */; };
 		DC2E8DF31A7F1384005228CD /* lesson8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2E8DF21A7F1384005228CD /* lesson8Tests.m */; };
+		DC2E8DFE1A7F2279005228CD /* DropitBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2E8DFD1A7F2279005228CD /* DropitBehavior.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		DC2E8DEC1A7F1384005228CD /* lesson8Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lesson8Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2E8DF11A7F1384005228CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC2E8DF21A7F1384005228CD /* lesson8Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lesson8Tests.m; sourceTree = "<group>"; };
+		DC2E8DFC1A7F2279005228CD /* DropitBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropitBehavior.h; sourceTree = "<group>"; };
+		DC2E8DFD1A7F2279005228CD /* DropitBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropitBehavior.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +84,8 @@
 		DC2E8DD51A7F1384005228CD /* lesson8 */ = {
 			isa = PBXGroup;
 			children = (
-				DC2E8DDA1A7F1384005228CD /* AppDelegate.h */,
-				DC2E8DDB1A7F1384005228CD /* AppDelegate.m */,
+				DC2E8DFC1A7F2279005228CD /* DropitBehavior.h */,
+				DC2E8DFD1A7F2279005228CD /* DropitBehavior.m */,
 				DC2E8DDD1A7F1384005228CD /* ViewController.h */,
 				DC2E8DDE1A7F1384005228CD /* ViewController.m */,
 				DC2E8DE01A7F1384005228CD /* Main.storyboard */,
@@ -96,6 +99,8 @@
 		DC2E8DD61A7F1384005228CD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DC2E8DDA1A7F1384005228CD /* AppDelegate.h */,
+				DC2E8DDB1A7F1384005228CD /* AppDelegate.m */,
 				DC2E8DD71A7F1384005228CD /* Info.plist */,
 				DC2E8DD81A7F1384005228CD /* main.m */,
 			);
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC2E8DDF1A7F1384005228CD /* ViewController.m in Sources */,
+				DC2E8DFE1A7F2279005228CD /* DropitBehavior.m in Sources */,
 				DC2E8DDC1A7F1384005228CD /* AppDelegate.m in Sources */,
 				DC2E8DD91A7F1384005228CD /* main.m in Sources */,
 			);
