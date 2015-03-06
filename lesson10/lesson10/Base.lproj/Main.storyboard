@@ -71,9 +71,30 @@
                     <view key="view" contentMode="scaleToFill" id="yOZ-N7-Qis">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jqg-dI-DBm">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="NCL-mM-vg5">
+                                <rect key="frame" x="281" y="281" width="37" height="37"/>
+                                <color key="color" red="0.43922282810000002" green="0.61993669179999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jqg-dI-DBm" firstAttribute="bottom" secondItem="Rd4-kb-uLN" secondAttribute="top" id="0K6-Xh-G9q"/>
+                            <constraint firstAttribute="trailing" secondItem="jqg-dI-DBm" secondAttribute="trailing" id="8bc-Jm-JPE"/>
+                            <constraint firstAttribute="centerY" secondItem="NCL-mM-vg5" secondAttribute="centerY" id="eS1-8l-xzQ"/>
+                            <constraint firstItem="jqg-dI-DBm" firstAttribute="leading" secondItem="yOZ-N7-Qis" secondAttribute="leading" id="hUY-5X-MJ5"/>
+                            <constraint firstItem="jqg-dI-DBm" firstAttribute="top" secondItem="yOZ-N7-Qis" secondAttribute="top" id="jwc-kU-iG9"/>
+                            <constraint firstAttribute="centerX" secondItem="NCL-mM-vg5" secondAttribute="centerX" id="vWg-rQ-Rz0"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0QW-GQ-mhj"/>
+                    <connections>
+                        <outlet property="scrollView" destination="jqg-dI-DBm" id="E0n-18-a9v"/>
+                        <outlet property="spinner" destination="NCL-mM-vg5" id="n35-RC-sr4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uvv-WT-hEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
